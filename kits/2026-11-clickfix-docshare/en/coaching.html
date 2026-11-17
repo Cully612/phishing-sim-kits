@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This was a training email · Fernhollow security awareness</title>
+<link rel="stylesheet" href="../../../assets/coaching.css">
+</head>
+<body>
+<div class="training-banner">Training example · Fernhollow Outfitters security awareness</div>
+<header><div class="wrap">
+  <small>Phishing simulation</small>
+  <h1>This was a practice email. Nothing bad happened.</h1>
+  <p>Attackers send messages like this every day. Take two minutes to see the signs, so the real one doesn't get you.</p>
+</div></header>
+
+<main>
+  <h2>The email you just opened</h2>
+  <div class="replica">
+    <p class="row"><span class="pin">1</span><b>From:</b> DocuVault &lt;notify@<mark>docuvault-share.example</mark>&gt;</p>
+    <p class="row"><span class="pin">2</span><mark>Hello,</mark></p>
+    <p class="row"><span class="pin">3</span><b>Kara Lindqvist</b> (a vendor contact) has shared <b>Q4 Vendor Rates.pdf</b> with you.</p>
+    <p class="row"><span class="pin">4</span>For your security, this link <mark>expires in 24 hours</mark>.</p>
+    <p class="row"><span class="pin">5</span><span class="btnlike">Open document</span> &nbsp;→ hover shows <mark>docuvault-share.example/v/8KQ2-verify</mark></p>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="SENDER-LOOKALIKE"><span class="pin">1</span><div><b>The sender's address doesn't match the service.</b>DocuVault's real address ends in docuvault.example. This one adds "-share" so it looks right at a glance.<div class="habit">Check the full address, not just the name.</div></div></li>
+    <li data-cue="GENERIC-GREETING"><span class="pin">2</span><div><b>No name.</b>A service you use would usually greet you by name.<div class="habit">A generic greeting is one more reason to check.</div></div></li>
+    <li data-cue="UNEXPECTED-SHARE"><span class="pin">3</span><div><b>A file you weren't expecting.</b>Rate sheets and invoices are favorite bait because they look like normal work.<div class="habit">If you didn't ask for it, check with the sender by phone or Teams first.</div></div></li>
+    <li data-cue="URGENCY"><span class="pin">4</span><div><b>A countdown.</b>"Expires in 24 hours" is there to rush you.<div class="habit">Slow down when a message tries to speed you up.</div></div></li>
+    <li data-cue="LINK-MISMATCH"><span class="pin">5</span><div><b>The button goes somewhere else.</b>Hovering shows the look-alike address again, plus "verify" in the link.<div class="habit">Hover before you click. On a phone, press and hold.</div></div></li>
+  </ul>
+
+  <h2>Where a real version of this click would take you</h2>
+  <p>In a real attack, the link opens a page that says the document can't load until you "verify you're human." Here's what that page looks like:</p>
+  <div class="trick">
+    <span class="stamp">The trick (picture only)</span>
+    <div class="fakebox">
+      <div class="t">&#9745; Verify you are human</div>
+      <div>To view this document, complete these verification steps:</div>
+      <ol>
+        <li>Press <kbd>Windows</kbd> + <kbd>R</kbd></li>
+        <li>Press <kbd>Ctrl</kbd> + <kbd>V</kbd></li>
+        <li>Press <kbd>Enter</kbd></li>
+      </ol>
+    </div>
+  </div>
+  <ul class="cues">
+    <li data-cue="FAKE-VERIFICATION"><span class="pin">6</span><div><b>A fake "verify you're human" step.</b>Real checks only ask you to tick a box or pick pictures.<div class="habit">Anything more than that is a warning sign.</div></div></li>
+    <li data-cue="PASTE-AND-RUN"><span class="pin">7</span><div><b>Asked to paste and run something.</b>This is the ClickFix trick. The page secretly copies a command. Windows + R opens the Run box, Ctrl + V pastes the command, and Enter runs it. You would install the attacker's software yourself.<div class="habit">No real website or document ever needs you to do this. Stop and report it.</div></div></li>
+  </ul>
+
+  <h2>What to do next time</h2>
+  <ol class="steps">
+    <li>Don't click. Use the <b>Report Phish</b> button in Outlook to send it to the security team.</li>
+    <li>If a page ever asks you to press keys or paste something, close the tab.</li>
+    <li>If you already pressed Enter on a step like this, call the IT Service Desk right away. Fast reporting makes it much easier to fix, and you won't be in trouble.</li>
+  </ol>
+</main>
+<footer>Fernhollow Outfitters Security Awareness (a fictional company used for training). Questions? Ask the security team.</footer>
+</body>
+</html>

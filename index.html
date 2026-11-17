@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phishing Simulation Kits · Gallery</title>
+<link rel="stylesheet" href="assets/coaching.css">
+<style>
+  .kit { background:#fff; border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-top:16px }
+  .kit h3 { margin:0 0 4px; font-size:19px }
+  .meta { color:var(--muted); font-size:14px }
+  .links a { display:inline-block; margin:10px 10px 0 0; color:var(--forest); font-weight:600 }
+  .tag { display:inline-block; background:var(--sand); border-radius:999px; padding:2px 10px; font-size:12.5px; margin:6px 6px 0 0 }
+
+  /* Filter bar — built by gallery.js; invisible until JS runs */
+  #filters { margin:20px 0 6px; display:flex; flex-wrap:wrap; gap:8px }
+  .filter-btn {
+    background:var(--sand); border:1px solid var(--line); border-radius:999px;
+    padding:5px 14px; font-size:13px; font-family:inherit; cursor:pointer;
+  }
+  .filter-btn.active { background:var(--forest); color:#fff; border-color:var(--forest) }
+  /* Keyboard focus ring */
+  .filter-btn:focus-visible { outline:2px solid var(--forest); outline-offset:2px }
+  #kit-count { font-size:14px; color:var(--muted); margin:0 0 4px }
+</style>
+</head>
+<body>
+<div class="training-banner">Training examples only · fictional brands · nothing on these pages collects data or runs code</div>
+<header><div class="wrap">
+  <small>Built with Claude Code</small>
+  <h1>Phishing Simulation Kits</h1>
+  <p>Each kit turns a real attack trend into a safe training email, a coaching page and red-flag library entries, in English and Spanish.</p>
+</div></header>
+<main>
+
+  <!-- Filter buttons are injected here by gallery.js.
+       If JavaScript is off this div stays empty and all kits show. -->
+  <div id="filters" aria-label="Filter kits by red flag or difficulty"></div>
+
+  <!-- Showing X of Y line, also written by gallery.js -->
+  <p id="kit-count"></p>
+
+  <!-- ═══ KIT CARDS ═══
+       data-cues : space-separated list of indicator IDs from kit.json
+       data-difficulty : 1 / 2 / 3 from kit.json
+       Both attributes drive the JS filter — keep them in sync with kit.json. -->
+
+  <div class="kit"
+       data-cues="SENDER-LOOKALIKE GENERIC-GREETING UNEXPECTED-SHARE URGENCY LINK-MISMATCH FAKE-VERIFICATION PASTE-AND-RUN"
+       data-difficulty="2">
+    <h3>Shared document that "needs verification"</h3>
+    <div class="meta">Trend: ClickFix &nbsp;·&nbsp; Difficulty 2 of 3 &nbsp;·&nbsp; Fictional DocuVault file share</div>
+    <div>
+      <span class="tag">Sender look-alike</span>
+      <span class="tag">Generic greeting</span>
+      <span class="tag">Unexpected share</span>
+      <span class="tag">Urgency</span>
+      <span class="tag">Link mismatch</span>
+      <span class="tag">Fake verification</span>
+      <span class="tag">Paste and run</span>
+    </div>
+    <div class="links">
+      <a href="kits/2026-11-clickfix-docshare/en/email.html">Email (EN)</a>
+      <a href="kits/2026-11-clickfix-docshare/en/coaching.html">Coaching page (EN)</a>
+      <a href="kits/2026-11-clickfix-docshare/es/email.html">Correo (ES)</a>
+      <a href="kits/2026-11-clickfix-docshare/es/coaching.html">Página de coaching (ES)</a>
+    </div>
+  </div>
+
+  <div class="kit"
+       data-cues="SENDER-LOOKALIKE LINK-MISMATCH FAKE-SUPPORT-NUMBER"
+       data-difficulty="3">
+    <h3>Flight delay notice with fake support number</h3>
+    <div class="meta">Trend: Vishing via email lure &nbsp;·&nbsp; Difficulty 3 of 3 &nbsp;·&nbsp; Fictional SkyBridge Airlines</div>
+    <div>
+      <span class="tag">Sender look-alike</span>
+      <span class="tag">Link mismatch</span>
+      <span class="tag">Fake support number</span>
+    </div>
+    <div class="links">
+      <a href="kits/2026-11-airline-delay/en/email.html">Email (EN)</a>
+      <a href="kits/2026-11-airline-delay/en/coaching.html">Coaching page (EN)</a>
+      <a href="kits/2026-11-airline-delay/es/email.html">Correo (ES)</a>
+      <a href="kits/2026-11-airline-delay/es/coaching.html">Página de coaching (ES)</a>
+    </div>
+  </div>
+
+</main>
+<footer>Made by Dan Culhane as a portfolio project. All companies and domains are fictional.</footer>
+
+<!-- gallery.js adds filter buttons and wires up the count line.
+     defer means it runs after the page is parsed, so the cards are ready. -->
+<script defer src="assets/gallery.js"></script>
+</body>
+</html>

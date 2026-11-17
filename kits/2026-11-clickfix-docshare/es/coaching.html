@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Este fue un correo de práctica · Concientización en seguridad de Fernhollow</title>
+<link rel="stylesheet" href="../../../assets/coaching.css">
+</head>
+<body>
+<div class="training-banner">Ejemplo de capacitación · Concientización en seguridad de Fernhollow Outfitters</div>
+<header><div class="wrap">
+  <small>Simulación de phishing</small>
+  <h1>Este fue un correo de práctica. No pasó nada malo.</h1>
+  <p>Los atacantes envían mensajes como este todos los días. Tómate dos minutos para ver las señales y que el real no te engañe.</p>
+</div></header>
+
+<main>
+  <h2>El correo que acabas de abrir</h2>
+  <div class="replica">
+    <p class="row"><span class="pin">1</span><b>De:</b> DocuVault &lt;notify@<mark>docuvault-share.example</mark>&gt;</p>
+    <p class="row"><span class="pin">2</span><mark>Hola:</mark></p>
+    <p class="row"><span class="pin">3</span><b>Kara Lindqvist</b> (un contacto de un proveedor) compartió <b>Tarifas de proveedores T4.pdf</b> contigo.</p>
+    <p class="row"><span class="pin">4</span>Por tu seguridad, este enlace <mark>vence en 24 horas</mark>.</p>
+    <p class="row"><span class="pin">5</span><span class="btnlike">Abrir documento</span> &nbsp;→ al pasar el cursor aparece <mark>docuvault-share.example/v/8KQ2-verify</mark></p>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="SENDER-LOOKALIKE"><span class="pin">1</span><div><b>La dirección no coincide con el servicio.</b>La dirección real de DocuVault termina en docuvault.example. Esta agrega "-share" para que parezca correcta a simple vista.<div class="habit">Revisa la dirección completa, no solo el nombre.</div></div></li>
+    <li data-cue="GENERIC-GREETING"><span class="pin">2</span><div><b>Sin tu nombre.</b>Un servicio que usas normalmente te saluda por tu nombre.<div class="habit">Un saludo genérico es otra razón para revisar.</div></div></li>
+    <li data-cue="UNEXPECTED-SHARE"><span class="pin">3</span><div><b>Un archivo que no esperabas.</b>Las listas de tarifas y las facturas son un anzuelo común porque parecen trabajo normal.<div class="habit">Si no lo pediste, confírmalo antes con la persona por teléfono o Teams.</div></div></li>
+    <li data-cue="URGENCY"><span class="pin">4</span><div><b>Una cuenta regresiva.</b>"Vence en 24 horas" está ahí para apurarte.<div class="habit">Cuando un mensaje te apura, tómate un momento más.</div></div></li>
+    <li data-cue="LINK-MISMATCH"><span class="pin">5</span><div><b>El botón lleva a otro sitio.</b>Al pasar el cursor aparece otra vez la dirección falsa, con "verify" en el enlace.<div class="habit">Pasa el cursor antes de hacer clic. En el celular, mantén presionado.</div></div></li>
+  </ul>
+
+  <h2>A dónde te habría llevado este clic en un ataque real</h2>
+  <p>En un ataque real, el enlace abre una página que dice que el documento no se puede mostrar hasta que "verifiques que eres humano". Así se ve esa página:</p>
+  <div class="trick">
+    <span class="stamp">El truco (solo imagen)</span>
+    <div class="fakebox">
+      <div class="t">&#9745; Verifica que eres humano</div>
+      <div>Para ver este documento, completa estos pasos de verificación:</div>
+      <ol>
+        <li>Presiona <kbd>Windows</kbd> + <kbd>R</kbd></li>
+        <li>Presiona <kbd>Ctrl</kbd> + <kbd>V</kbd></li>
+        <li>Presiona <kbd>Enter</kbd></li>
+      </ol>
+    </div>
+  </div>
+  <ul class="cues">
+    <li data-cue="FAKE-VERIFICATION"><span class="pin">6</span><div><b>Un paso falso de "verifica que eres humano".</b>Las verificaciones reales solo piden marcar una casilla o elegir imágenes.<div class="habit">Cualquier cosa más es una señal de alerta.</div></div></li>
+    <li data-cue="PASTE-AND-RUN"><span class="pin">7</span><div><b>Te piden pegar y ejecutar algo.</b>Este es el truco ClickFix. La página copia un comando sin avisar. Windows + R abre el cuadro Ejecutar, Ctrl + V pega el comando y Enter lo ejecuta. Tú mismo instalarías el programa del atacante.<div class="habit">Ningún sitio o documento legítimo necesita que hagas esto. Detente y repórtalo.</div></div></li>
+  </ul>
+
+  <h2>Qué hacer la próxima vez</h2>
+  <ol class="steps">
+    <li>No hagas clic. Usa el botón <b>Report Phish</b> (Reportar phishing) en Outlook para enviarlo al equipo de seguridad.</li>
+    <li>Si una página te pide presionar teclas o pegar algo, cierra la pestaña.</li>
+    <li>Si ya presionaste Enter en un paso como este, llama de inmediato a la Mesa de Ayuda de TI. Reportarlo rápido facilita mucho la solución, y no tendrás problemas.</li>
+  </ol>
+</main>
+<footer>Concientización en seguridad de Fernhollow Outfitters (empresa ficticia usada para capacitación). ¿Preguntas? Consulta al equipo de seguridad.</footer>
+</body>
+</html>

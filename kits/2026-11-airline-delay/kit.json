@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-airline-delay",
+  "title": { "en": "Flight delay notice with fake support number", "es": "Aviso de retraso de vuelo con número de soporte falso" },
+  "trend": "Vishing via email lure",
+  "brief": "briefs/2026-11-airline-delay.md",
+  "lure": "A SkyBridge Airlines delay notification for a named traveler, timed to a real-world outage event. The email offers a 'Check Flight Status' button (lookalike domain) and a fake customer-support phone number that connects to a scammer.",
+  "impersonates": "SkyBridge Airlines (fictional airline)",
+  "audience": "All Fernhollow Outfitters employees; especially effective for frequent business travelers",
+  "difficulty": 3,
+  "cues": ["SENDER-LOOKALIKE", "LINK-MISMATCH", "FAKE-SUPPORT-NUMBER"],
+  "languages": ["en", "es"],
+  "review_notes": [
+    "Spanish text written by Claude; have a native speaker review tone and regional phrasing before use with learners.",
+    "The phone number cue relies on stress and timing (outage news) rather than obvious visual errors — brief facilitators on that before deployment."
+  ],
+  "created": "2026-11-17"
+}

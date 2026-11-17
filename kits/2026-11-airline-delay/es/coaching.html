@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Este fue un correo de práctica · Concientización en seguridad de Fernhollow</title>
+<link rel="stylesheet" href="../../../assets/coaching.css">
+</head>
+<body>
+<div class="training-banner">Ejemplo de capacitación · Concientización en seguridad de Fernhollow Outfitters</div>
+<header><div class="wrap">
+  <small>Simulación de phishing</small>
+  <h1>Este fue un correo de práctica. No pasó nada malo.</h1>
+  <p>Los atacantes envían mensajes como este cada vez que una falla masiva de aerolíneas aparece en las noticias. Tómate dos minutos para reconocer las señales y que el real no te engañe.</p>
+</div></header>
+
+<main>
+  <h2>El correo que acabas de abrir</h2>
+  <div class="replica">
+    <p class="row"><span class="pin">1</span><b>De:</b> SkyBridge Airlines &lt;no-reply@<mark>skybridgeairlines-status.example</mark>&gt;</p>
+    <p class="row" style="color:#6B7080;">Asunto: Aviso importante: Su próximo viaje puede verse afectado</p>
+    <p class="row"><mark>uno o más vuelos asociados a su cuenta pueden estar retrasados</mark> — sin número de vuelo, sin ruta, sin código de confirmación</p>
+    <p class="row"><span class="pin">2</span><span class="btnlike" style="background:#1A3A6B">Ver estado del vuelo</span> &nbsp;&rarr; al pasar el cursor aparece <mark>skybridgeairlines-status.example/status/check</mark></p>
+    <p class="row"><span class="pin">3</span>&#128222; <mark>1-800-555-0192</mark> &nbsp;(Atención al cliente de SkyBridge)</p>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="SENDER-LOOKALIKE"><span class="pin">1</span><div><b>El dominio del remitente tiene una palabra extra.</b> La dirección real de SkyBridge terminaría en <em>skybridgeairlines.example</em>. Esta agrega <em>-status</em>, como si fuera un subdominio legítimo de notificaciones. Es tan parecida que se escapa a primera vista — que es exactamente la intención.<div class="habit">Revisa la dirección completa, no solo el nombre que aparece. Cualquier palabra extra o guion después del nombre de la empresa es una señal para detenerse.</div></div></li>
+    <li data-cue="LINK-MISMATCH"><span class="pin">2</span><div><b>El botón lleva a un dominio falso.</b> Al pasar el cursor sobre "Ver estado del vuelo" aparece el mismo dominio falso — no el sitio real de la aerolínea. En un ataque real, esa página pediría tus datos de inicio de sesión o de pago.<div class="habit">Pasa el cursor antes de hacer clic (o mantén presionado en el celular). Si la dirección no es el dominio conocido de la empresa, ve directo al sitio escribiendo la dirección tú mismo.</div></div></li>
+    <li data-cue="FAKE-SUPPORT-NUMBER"><span class="pin">3</span><div><b>El número de teléfono comunica con un estafador, no con la aerolínea.</b> Los atacantes registran números que atienden centros de llamadas donde alguien se hace pasar por un agente. El guion es convincente: buscan tu nombre, ofrecen cambios de vuelo, y luego piden un "cargo de reprogramación" con tarjeta de regalo o transferencia bancaria — o piden tus credenciales para "acceder a tu reserva".<div class="habit">Nunca llames a un número que aparece en un correo. Búscalo tú mismo en el sitio web oficial de la aerolínea o en el reverso de tu tarjeta de crédito.</div></div></li>
+  </ul>
+
+  <h2>El detalle que este correo omitió — a propósito</h2>
+  <p>Nota que el correo nunca menciona un número de vuelo, una ruta, un horario de salida ni un código de confirmación. No es un descuido — es parte del diseño. Los atacantes envían este mensaje a miles de personas a la vez. No saben quién tiene un vuelo reservado ni cuándo. Al mantenerlo vago, el mensaje funciona con cualquiera que <em>pueda</em> tener un viaje próximo y ya esté inquieto por las noticias de la interrupción.</p>
+  <p><b>Los correos reales de aerolíneas siempre incluyen tu código de reserva y los detalles del vuelo.</b> Un correo que solo dice "su próximo viaje puede verse afectado" sin ninguno de esos datos no fue escrito para ti — fue escrito para generar suficiente preocupación como para que actúes antes de pensar.</p>
+
+  <h2>Por qué este correo llega en este momento</h2>
+  <p>Los atacantes siguen las noticias. Cuando una falla de aerolínea copa los titulares, saben que los viajeros ya esperan correos de alerta — y que el estrés del momento hace que actúen sin revisar. La misma táctica aparece en épocas de viajes por feriados, tormentas grandes y otros eventos que generan incertidumbre con los planes.</p>
+  <p>Cuando las interrupciones ya están en los titulares, trata cualquier correo de viaje inesperado con más precaución, no con menos.</p>
+
+  <h2>Qué hacer la próxima vez</h2>
+  <ol class="steps">
+    <li>No hagas clic en el botón ni llames al número. Usa el botón <b>Report Phish</b> (Reportar phishing) en Outlook para enviarlo al equipo de seguridad.</li>
+    <li>Para revisar el estado de un vuelo real, abre el navegador y escribe tú mismo la dirección de la aerolínea — no sigas los enlaces del correo.</li>
+    <li>Si ya llamaste al número y diste información, contacta de inmediato a la Mesa de Ayuda de TI. Reportarlo rápido facilita mucho la solución, y no tendrás problemas.</li>
+  </ol>
+</main>
+<footer>Concientización en seguridad de Fernhollow Outfitters (empresa ficticia usada para capacitación). ¿Preguntas? Consulta al equipo de seguridad.</footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "id": "2026-11-clickfix-docshare",
+  "title": { "en": "Shared document that \"needs verification\"", "es": "Documento compartido que \"necesita verificación\"" },
+  "trend": "ClickFix",
+  "brief": "briefs/2026-11-clickfix.md",
+  "lure": "A DocuVault file-share notice for a rates sheet the learner wasn't expecting. The link leads to a fake \"verify you're human\" step that asks them to press Windows + R, Ctrl + V and Enter.",
+  "impersonates": "DocuVault (fictional file-sharing service)",
+  "audience": "All Fernhollow Outfitters employees; best for purchasing, finance and store operations",
+  "difficulty": 2,
+  "cues": ["SENDER-LOOKALIKE", "GENERIC-GREETING", "UNEXPECTED-SHARE", "URGENCY", "LINK-MISMATCH", "FAKE-VERIFICATION", "PASTE-AND-RUN"],
+  "languages": ["en", "es"],
+  "review_notes": [
+    "Spanish text written by Claude; have a native speaker review tone and terms (e.g. 'Reportar phishing' button name should match the real button label in the learner's mail client)."
+  ],
+  "created": "2026-11-17"
+}

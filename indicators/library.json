@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "indicators": [
+    {
+      "id": "SENDER-LOOKALIKE",
+      "name": { "en": "Sender address doesn't match the service", "es": "La dirección del remitente no coincide con el servicio" },
+      "tell": { "en": "The name says a service you know, but the address after the @ is a different or stretched-out domain.", "es": "El nombre parece de un servicio conocido, pero lo que va después de la @ es otro dominio o uno alargado." },
+      "habit": { "en": "Check the full address, not just the display name.", "es": "Revisa la dirección completa, no solo el nombre que aparece." }
+    },
+    {
+      "id": "UNEXPECTED-SHARE",
+      "name": { "en": "A file you weren't expecting", "es": "Un archivo que no esperabas" },
+      "tell": { "en": "Someone shares a document out of the blue, often an invoice, rates sheet or HR file.", "es": "Alguien te comparte un documento sin aviso, a menudo una factura, una lista de tarifas o un archivo de RR. HH." },
+      "habit": { "en": "If you didn't ask for it, confirm with the sender another way before opening.", "es": "Si no lo pediste, confírmalo con la persona por otro medio antes de abrirlo." }
+    },
+    {
+      "id": "URGENCY",
+      "name": { "en": "Pressure to act fast", "es": "Presión para actuar rápido" },
+      "tell": { "en": "A deadline or expiry (\"link expires in 24 hours\") rushes you past your normal checks.", "es": "Un plazo o vencimiento (\"el enlace vence en 24 horas\") te apura para que no revises con calma." },
+      "habit": { "en": "Slow down when a message tries to speed you up.", "es": "Cuando un mensaje te apura, tómate un momento más." }
+    },
+    {
+      "id": "LINK-MISMATCH",
+      "name": { "en": "Link goes somewhere else", "es": "El enlace lleva a otro sitio" },
+      "tell": { "en": "Hovering over the button shows an address that isn't the company or service named in the email.", "es": "Al pasar el cursor sobre el botón aparece una dirección que no es de la empresa o servicio del correo." },
+      "habit": { "en": "Hover before you click (or press and hold on a phone).", "es": "Pasa el cursor antes de hacer clic (o mantén presionado en el celular)." }
+    },
+    {
+      "id": "GENERIC-GREETING",
+      "name": { "en": "Generic greeting", "es": "Saludo genérico" },
+      "tell": { "en": "\"Hello user\" or no name at all from a service that should know who you are.", "es": "\"Hola usuario\" o ningún nombre, de un servicio que debería saber quién eres." },
+      "habit": { "en": "Treat a generic greeting as one more reason to check.", "es": "Toma un saludo genérico como otra razón para revisar." }
+    },
+    {
+      "id": "FAKE-VERIFICATION",
+      "name": { "en": "Fake \"verify you're human\" step", "es": "Paso falso de \"verifica que eres humano\"" },
+      "tell": { "en": "A page shows a CAPTCHA or error that asks you to do something unusual to continue.", "es": "Una página muestra un CAPTCHA o un error que te pide hacer algo inusual para continuar." },
+      "habit": { "en": "Real checks ask you to click a box or pick pictures. Nothing more.", "es": "Las verificaciones reales solo piden marcar una casilla o elegir imágenes. Nada más." }
+    },
+    {
+      "id": "FAKE-SUPPORT-NUMBER",
+      "name": { "en": "Phone number listed in the email", "es": "Número de teléfono en el correo" },
+      "tell": { "en": "The email provides a customer-service number to call. The number connects to a scammer posing as a real agent, not to the actual company.", "es": "El correo incluye un número de atención al cliente. Ese número comunica con un estafador que se hace pasar por un agente real, no con la empresa." },
+      "habit": { "en": "Never call a number from an email. Look it up yourself on the company's official website or the back of your card.", "es": "Nunca llames a un número que aparece en un correo. Búscalo tú mismo en el sitio web oficial de la empresa o en el reverso de tu tarjeta." }
+    },
+    {
+      "id": "PASTE-AND-RUN",
+      "name": { "en": "Asked to paste and run something", "es": "Te piden pegar y ejecutar algo" },
+      "tell": { "en": "Instructions like \"press Windows + R, then Ctrl + V, then Enter.\" The page has quietly copied a command, and those keys run it on your computer. This is the ClickFix trick.", "es": "Instrucciones como \"presiona Windows + R, luego Ctrl + V y Enter\". La página copió un comando sin avisar, y esas teclas lo ejecutan en tu equipo. Este es el truco ClickFix." },
+      "habit": { "en": "No real website or document ever needs you to paste and run a command. Stop and report it.", "es": "Ningún sitio o documento legítimo necesita que pegues y ejecutes un comando. Detente y repórtalo." }
+    }
+  ]
+}

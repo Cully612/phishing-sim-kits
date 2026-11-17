@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This was a training email · Fernhollow security awareness</title>
+<link rel="stylesheet" href="../../../assets/coaching.css">
+</head>
+<body>
+<div class="training-banner">Training example · Fernhollow Outfitters security awareness</div>
+<header><div class="wrap">
+  <small>Phishing simulation</small>
+  <h1>This was a practice email. Nothing bad happened.</h1>
+  <p>Attackers send messages like this every time a major airline outage makes the news. Take two minutes to see the signs, so the real one doesn't get you.</p>
+</div></header>
+
+<main>
+  <h2>The email you just opened</h2>
+  <div class="replica">
+    <p class="row"><span class="pin">1</span><b>From:</b> SkyBridge Airlines &lt;no-reply@<mark>skybridgeairlines-status.example</mark>&gt;</p>
+    <p class="row" style="color:#6B7080;">Subject: Important notice: Your upcoming travel may be affected</p>
+    <p class="row"><mark>one or more flights associated with your account may be delayed</mark> — no flight number, no route, no confirmation code</p>
+    <p class="row"><span class="pin">2</span><span class="btnlike" style="background:#1A3A6B">Check Flight Status</span> &nbsp;&rarr; hover shows <mark>skybridgeairlines-status.example/status/check</mark></p>
+    <p class="row"><span class="pin">3</span>&#128222; <mark>1-800-555-0192</mark> &nbsp;(SkyBridge Customer Support)</p>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="SENDER-LOOKALIKE"><span class="pin">1</span><div><b>The sender's domain has an extra word.</b> SkyBridge's real address would end in <em>skybridgeairlines.example</em>. This one adds <em>-status</em>, making it look like a legitimate notifications subdomain. It's close enough to pass a quick glance — which is exactly the point.<div class="habit">Check the full address, not just the display name. Any extra word or hyphen after the company name is a signal to pause.</div></div></li>
+    <li data-cue="LINK-MISMATCH"><span class="pin">2</span><div><b>The button goes to a lookalike domain.</b> Hovering over "Check Flight Status" reveals the same fake domain — not the airline's real site. In a real attack this page would ask for your login or payment details.<div class="habit">Hover before you click (or press and hold on a phone). If the URL isn't the company's known domain, go directly to their site by typing the address yourself.</div></div></li>
+    <li data-cue="FAKE-SUPPORT-NUMBER"><span class="pin">3</span><div><b>The phone number connects to a scammer, not the airline.</b> Attackers register numbers that ring to call centers staffed with people posing as airline agents. The script is polished: they'll look up your name, offer to rebook you, then ask for a rebooking fee by gift card or wire transfer — or request your account credentials to "pull up your reservation."<div class="habit">Never call a number listed in an email. Find the real number on the airline's official website or the back of your credit card.</div></div></li>
+  </ul>
+
+  <h2>The detail this email left out — on purpose</h2>
+  <p>Notice that the email never mentions a flight number, a route, a departure time, or a confirmation code. That's not an oversight — it's the design. Attackers send this to thousands of people at once. They don't know who has a flight booked or when. By staying vague, the message works on anyone who <em>might</em> have travel coming up and is already rattled by outage news.</p>
+  <p><b>Real airline emails always include your booking reference and flight details.</b> An email that only says "your upcoming travel may be affected" without any of that information wasn't written for you — it was written to cause enough worry that you act before you think.</p>
+
+  <h2>Why this email is timed for right now</h2>
+  <p>Attackers watch the news. When a major airline outage is in the headlines, they know travelers are already expecting disruption emails — and are stressed enough to act without thinking. The same tactic appears around holiday travel weeks, big storms, and other events that put people on edge about their plans.</p>
+  <p>When disruption is already in the headlines, treat any unexpected travel email with extra skepticism, not less.</p>
+
+  <h2>What to do next time</h2>
+  <ol class="steps">
+    <li>Don't click the button and don't call the number. Use the <b>Report Phish</b> button in Outlook to send it to the security team.</li>
+    <li>To check on a real flight, open a browser and type the airline's address yourself — don't follow links from email.</li>
+    <li>If you already called the number and gave information, contact the IT Service Desk right away. Fast reporting makes it much easier to fix, and you won't be in trouble.</li>
+  </ol>
+</main>
+<footer>Fernhollow Outfitters Security Awareness (a fictional company used for training). Questions? Ask the security team.</footer>
+</body>
+</html>
