@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Este fue un correo de práctica · Concientización en seguridad de Fernhollow</title>
+<link rel="stylesheet" href="../../../assets/coaching.css">
+</head>
+<body>
+<div class="training-banner">Ejemplo de capacitación · Concientización en seguridad de Fernhollow Outfitters</div>
+<header><div class="wrap">
+  <small>Simulación de phishing</small>
+  <h1>Este fue un correo de práctica. No pasó nada malo.</h1>
+  <p>Los recordatorios de reunión se sienten rutinarios — y la rutina es exactamente cuando dejamos de pensar. Tómate dos minutos para ver qué hizo peligroso a este correo.</p>
+</div></header>
+
+<main>
+  <h2>Paso 1 — El correo que abriste</h2>
+  <div class="replica">
+    <p class="row"><span class="pin">1</span><b>De:</b> TeamHub &lt;notifications@<mark>teamhub-notify.example</mark>&gt;</p>
+    <p class="row" style="color:#5B6070;">Asunto: Recordatorio: Tu reunión con Sarah Chen es en 2 días</p>
+    <p class="row">Debate del Proyecto 2027 &nbsp;·&nbsp; Sarah Chen &nbsp;·&nbsp; jue 20 nov &nbsp;·&nbsp; 10:00 AM</p>
+    <p class="row"><span class="pin">2</span><span class="btnlike" style="background:#6264A7;">Ver detalles de la reunión</span> &nbsp;&rarr; al pasar el cursor aparece <mark>teamhub-notify.example/m/details?id=8824af</mark></p>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="SENDER-LOOKALIKE"><span class="pin">1</span><div><b>El dominio del remitente tiene una palabra extra.</b> Las notificaciones reales de TeamHub vendrían de <em>teamhub.example</em>. Este usa <em>teamhub-notify.example</em> — una palabra extra que lo hace parecer un subdominio legítimo de notificaciones. En una bandeja de entrada ocupada, pasa desapercibido.<div class="habit">Revisa la dirección completa. Cualquier palabra extra o guion después del nombre de la empresa es una señal para detenerse.</div></div></li>
+    <li data-cue="LINK-MISMATCH"><span class="pin">2</span><div><b>El botón lleva al mismo dominio falso.</b> Al pasar el cursor sobre "Ver detalles de la reunión" aparece el dominio falso — no teamhub.example. El primer clic se sentía seguro porque la página de detalles tenía buen aspecto. Ese es el diseño: generar confianza antes de que aparezca la trampa real.<div class="habit">Pasa el cursor antes de hacer clic (o mantén presionado en el celular). Si el dominio no es exactamente el esperado, no hagas clic.</div></div></li>
+  </ul>
+
+  <h2>Paso 2 — La página de detalles de la reunión</h2>
+  <p>La página en la que aterrizaste parecía una vista real de reunión en TeamHub — un título, una organizadora, una fecha y hora. Estaba diseñada para sentirse como confirmación de que la reunión era legítima. Así se veía:</p>
+
+  <div class="trick">
+    <span class="stamp">La página trampa (solo imagen)</span>
+    <div class="fakebox">
+      <div class="t">Debate del Proyecto 2027</div>
+      <div style="color:#5B6070;font-size:13px;margin-bottom:10px;">Organizado por Sarah Chen &nbsp;·&nbsp; Fernhollow Outfitters</div>
+      <div style="font-size:13px;line-height:1.9;">
+        <div><b>Fecha:</b> jueves, 20 de noviembre de 2026</div>
+        <div><b>Hora:</b> 10:00 AM – 10:30 AM</div>
+        <div><b>Lugar:</b> TeamHub — reunión en línea</div>
+        <div><b>ID de reunión:</b> 847 293 1056</div>
+        <div><b>Contraseña:</b> Wx4rP9</div>
+      </div>
+      <div style="margin-top:14px;">
+        <span style="display:inline-block;background:#6264A7;color:#fff;padding:8px 18px;border-radius:5px;font-size:13px;font-weight:600;margin-right:10px;">Unirse a la reunión</span>
+        <mark style="background:none;text-decoration:underline;color:#6264A7;font-size:13px;">Reprogramar</mark>
+      </div>
+    </div>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="LINK-MISMATCH"><span class="pin">3</span><div><b>El enlace "Reprogramar" en esa página era la trampa real.</b> Al pasar el cursor sobre él se habría revelado el mismo dominio falso — <em>teamhub-notify.example</em> — no el sitio real de TeamHub. En un ataque real, hacer clic te llevaría a una página diseñada para robar tus credenciales o instalar malware.<div class="habit">Incluso cuando una página parece correcta, pasa el cursor sobre cada enlace antes de hacer clic. El dominio dice la verdad.</div></div></li>
+  </ul>
+
+  <h2>El hábito que detiene esto siempre</h2>
+  <p>Antes de hacer clic en cualquier cosa de un correo de reunión, hazte una pregunta: <b>¿esta reunión ya está en mi calendario?</b> Abre tu aplicación de calendario y verifica. Si la reunión es real, ya está ahí — no necesitas el correo para nada. Si no está, el correo no es legítimo.</p>
+  <p>Este ataque funcionó haciendo que actuaras antes de pensar. Los recordatorios de reunión se sienten rutinarios, por lo que los procesamos rápido. Reducir la velocidad — aunque sea diez segundos — rompe el truco por completo.</p>
+
+  <h2>Qué hacer la próxima vez</h2>
+  <ol class="steps">
+    <li>No hagas clic. Usa el botón <b>Report Phish</b> (Reportar phishing) en Outlook para enviarlo al equipo de seguridad.</li>
+    <li>Para verificar una reunión, abre tu aplicación de calendario directamente — nunca sigas los enlaces del correo.</li>
+    <li>Si ya ingresaste tus credenciales en una página como esta, contacta de inmediato a la Mesa de Ayuda de TI. Reportarlo rápido facilita mucho la solución, y no tendrás problemas.</li>
+  </ol>
+</main>
+<footer>Concientización en seguridad de Fernhollow Outfitters (empresa ficticia usada para capacitación). ¿Preguntas? Consulta al equipo de seguridad.</footer>
+</body>
+</html>

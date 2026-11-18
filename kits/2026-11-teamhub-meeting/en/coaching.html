@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This was a training email · Fernhollow security awareness</title>
+<link rel="stylesheet" href="../../../assets/coaching.css">
+</head>
+<body>
+<div class="training-banner">Training example · Fernhollow Outfitters security awareness</div>
+<header><div class="wrap">
+  <small>Phishing simulation</small>
+  <h1>This was a practice email. Nothing bad happened.</h1>
+  <p>Meeting reminders feel routine — and routine is exactly when people stop thinking. Take two minutes to see what made this one dangerous.</p>
+</div></header>
+
+<main>
+  <h2>Step 1 — The email you opened</h2>
+  <div class="replica">
+    <p class="row"><span class="pin">1</span><b>From:</b> TeamHub &lt;notifications@<mark>teamhub-notify.example</mark>&gt;</p>
+    <p class="row" style="color:#5B6070;">Subject: Reminder: Your meeting with Sarah Chen is in 2 days</p>
+    <p class="row">2027 Project Discussion &nbsp;·&nbsp; Sarah Chen &nbsp;·&nbsp; Thu Nov 20 &nbsp;·&nbsp; 10:00 AM</p>
+    <p class="row"><span class="pin">2</span><span class="btnlike" style="background:#6264A7;">Review Meeting Details</span> &nbsp;&rarr; hover shows <mark>teamhub-notify.example/m/details?id=8824af</mark></p>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="SENDER-LOOKALIKE"><span class="pin">1</span><div><b>The sender's domain has an extra word.</b> TeamHub's real notifications would come from <em>teamhub.example</em>. This one uses <em>teamhub-notify.example</em> — an extra word that makes it look like a legitimate notifications subdomain. At a glance, in a busy inbox, it reads as real.<div class="habit">Check the full address. Any extra word or hyphen after the company name is a signal to pause.</div></div></li>
+    <li data-cue="LINK-MISMATCH"><span class="pin">2</span><div><b>The button goes to the same fake domain.</b> Hovering over "Review Meeting Details" shows the lookalike domain — not teamhub.example. The first click felt safe because the meeting details page looked right. That's the design: lull you into trusting the page before the real trap appears.<div class="habit">Hover before you click (or press and hold on a phone). If the domain isn't exactly what you'd expect, don't click.</div></div></li>
+  </ul>
+
+  <h2>Step 2 — The meeting details page</h2>
+  <p>The page you landed on looked like a real TeamHub meeting view — a title, an organizer, a date and time. It was designed to feel like confirmation that the meeting was legitimate. Here's what it looked like:</p>
+
+  <div class="trick">
+    <span class="stamp">The lure page (picture only)</span>
+    <div class="fakebox">
+      <div class="t">2027 Project Discussion</div>
+      <div style="color:#5B6070;font-size:13px;margin-bottom:10px;">Organized by Sarah Chen &nbsp;·&nbsp; Fernhollow Outfitters</div>
+      <div style="font-size:13px;line-height:1.9;">
+        <div><b>Date:</b> Thursday, November 20, 2026</div>
+        <div><b>Time:</b> 10:00 AM – 10:30 AM</div>
+        <div><b>Location:</b> TeamHub — online meeting</div>
+        <div><b>Meeting ID:</b> 847 293 1056</div>
+        <div><b>Passcode:</b> Wx4rP9</div>
+      </div>
+      <div style="margin-top:14px;">
+        <span style="display:inline-block;background:#6264A7;color:#fff;padding:8px 18px;border-radius:5px;font-size:13px;font-weight:600;margin-right:10px;">Join Meeting</span>
+        <mark style="background:none;text-decoration:underline;color:#6264A7;font-size:13px;">Reschedule</mark>
+      </div>
+    </div>
+  </div>
+
+  <ul class="cues">
+    <li data-cue="LINK-MISMATCH"><span class="pin">3</span><div><b>The Reschedule link on that page was the real trap.</b> Hovering over it would have revealed the same fake domain — <em>teamhub-notify.example</em> — not TeamHub's real site. In a real attack, clicking it would take you to a page designed to steal your login credentials or install malware.<div class="habit">Even when a page looks right, hover over every link before you click. The domain tells the truth.</div></div></li>
+  </ul>
+
+  <h2>The habit that stops this every time</h2>
+  <p>Before clicking anything in a meeting-related email, ask yourself one question: <b>is this meeting already on my calendar?</b> Open your calendar app and check. If the meeting is real, it is already there — you do not need the email at all. If it isn't there, the email is not legitimate.</p>
+  <p>This attack worked by making you act before you thought. Meeting reminders feel routine, so we process them quickly. Slowing down — even for ten seconds — breaks the trick entirely.</p>
+
+  <h2>What to do next time</h2>
+  <ol class="steps">
+    <li>Don't click. Use the <b>Report Phish</b> button in Outlook to send the email to the security team.</li>
+    <li>To verify a meeting, open your calendar app directly — never follow links from email.</li>
+    <li>If you already entered credentials on a page like this, contact the IT Service Desk immediately. Fast reporting makes it much easier to fix, and you won't be in trouble.</li>
+  </ol>
+</main>
+<footer>Fernhollow Outfitters Security Awareness (a fictional company used for training). Questions? Ask the security team.</footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "id": "2026-11-teamhub-meeting",
+  "title": { "en": "Meeting reminder with fake details page", "es": "Recordatorio de reunión con página de detalles falsa" },
+  "trend": "Credential phishing via meeting lure",
+  "brief": "briefs/2026-11-teams-meeting-reminder.md",
+  "lure": "A TeamHub meeting reminder for a '2027 Project Discussion' with a plausible colleague name. The email links to a convincing fake meeting details page; the trap is the reschedule link on that page, not the initial button.",
+  "impersonates": "TeamHub (fictional chat and meetings platform)",
+  "audience": "All Fernhollow Outfitters employees",
+  "difficulty": 3,
+  "cues": ["SENDER-LOOKALIKE", "LINK-MISMATCH"],
+  "languages": ["en", "es"],
+  "review_notes": [
+    "Spanish text written by Claude; have a native speaker review before use with learners.",
+    "This kit includes an extra page (meeting.html) between the email and the coaching page. The checker does not scan meeting.html — safety rules were applied manually.",
+    "The two-step design is intentional: the first click (Review Meeting Details) feels safe. The trap is the Reschedule link on the meeting details page."
+  ],
+  "created": "2026-11-18"
+}

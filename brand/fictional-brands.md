@@ -13,6 +13,7 @@
 | TeamHub | Chat and meetings | `teamhub.example` | `teamhub-notify.example` |
 
 DocuVault colors: indigo #3B4BA8, white, light gray #F4F5F8.
+TeamHub colors: deep purple #4B2D8A, medium purple #6264A7, light purple #F3EFFD, white.
 
 ## Impersonated airline: SkyBridge Airlines
 - A made-up airline.
